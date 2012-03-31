@@ -1,0 +1,34 @@
+What is Pintos?
+=================
+
+Welcome to Pintos. Pintos is a simple operating system framework for the 80x86 architecture. It supports kernel threads, loading and running user programs, and a file system, but it implements all of these in a very simple way. In the Pintos projects, you and your project team will strengthen its support in all three of these areas.
+
+This is the *project2* branch.
+
+Statement of Purpose
+--------------------
+
+This is a project that is being developed by three students in an operating system class.
+
+This repo is designed to give an idea of what each project is about. At the end of the semester it will give an idea of how much work and code went into this operating system and what it took to make it work. This repo will be updated slowly through out the semester as each project is assigned.
+
+**DISCLAIMER**
+
+Copying or using this code for your own grade is a violation of the academic policy at K-State. Doing so will result in extreme actions. It is not recommended to look at or copy this code while taking this course.
+
+Dependancies
+-------------
+
+*taken from proj0*
+
+* Required: GCC. Version4.0 or later is preferred. Version3.3 or later should work. If the host machine has an 80x86 processor, then GCC should be available as gcc; otherwise, an 80x86 cross-compiler should be available as i386-elf-gcc. A sample set of commands for installing GCC 3.3.6 as a cross-compiler are included in ”src/misc/gcc-3.3.6-cross- howto”.
+* Required: GNU binutils. Pintos uses addr2line, ar, ld, objcopy, and ranlib. If the host machine is not an 80x86, versions targeting 80x86 should be available with an ”i386-elf-” prefix.
+* Required: Perl. Version 5.8.0 or later is preferred. Version 5.6.1 or later should work.
+* Required: GNU make, version 3.80 or later.
+* Recommended: QEMU version 0.8.0 or later. Bochs version 2.4.5 can also be used. Some other authors reported slowness on old machines, which can be frustrating. Both are installed in the Linux lab in N128. Most students preferred using Bochs last year. Bochs is available in the public directory as bochs-2.4.5.tar.gz.
+* Recommended: GDB is helpful in debugging. If the host machine is not an 80x86, a version of GDB targeting 80x86 should be available as ”i386-elf-gdb”.
+* Recommended: X11 server. Being able to use an X server makes the virtual machine feel more like a physical machine, but it is not strictly necessary. Xming (an X11 server) is installed on the Windows lab machines in N122. It can also be freely downloaded to use on your own machine. The latest stable version is posted in the public CIS520 tools directory as /pub/CIS520/tools/Xming-6-9-0-31-setup.exe. This is a Windows installer.
+* Optional: Texinfo, version 4.5 or later. Texinfo is required to build the PDF version of the documentation.
+* Optional: TeX. Also required to build the PDF version of the documentation.
+* Optional: VMware Player. This is a third platform that can also be used to test Pintos. You can turn Pintos into a virtual appliance and run it on top of Windows 7 using VMware or other virtualization software. We'll discuss more about these virtual machines later in the course.
+* Required for remote access: Putty.exe: SSH client. If you are working remotely, you can log into the Linux boxes using putty, and work from anywhere. Occasionally, you may want to start up multiple sessions so that you can kill processes that "hang" forever in another session. In this case, you can see all processes that you are responsible for using the command: ps –u <login name>; e.g., ps –u neilsen. Then, you can kill processes associated with another session by sending a SIGKILL signal (signal number 9 cannot be ignored); e.g., to kill process with pid 1234, use the command: kill -9 1234. A version is posted in the public tools directory, but you can also download a version from the web.

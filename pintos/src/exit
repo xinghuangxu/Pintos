@@ -1,0 +1,7 @@
+threads/thread.c:617:  sema_init(&t->wait_status->dead, 0);
+userprog/exception.c:154:    thread_current ()->wait_status->exit = -1;
+userprog/process.c:63:                        &exec.wait_status->elem);
+userprog/process.c:118:    sema_down(&t->wait_status->dead);
+userprog/process.c:119:    handle = t->wait_status->exit;
+userprog/process.c:140:  printf("%s: exit(%d)\n", cur->name, cur->wait_status->exit);
+userprog/process.c:141:  sema_up(&cur->wait_status->dead);
